@@ -1,0 +1,23 @@
+{
+  "id": "3723550",
+  "name": "语料库",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "3514074",
+      "name": "课程",
+      "font_class": "kecheng",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "12842706",
+      "name": "w_奖项",
+      "font_class": "w_jiangxiang",
+      "unicode": "e66e",
+      "unicode_decimal": 58990
+    }
+  ]
+}
