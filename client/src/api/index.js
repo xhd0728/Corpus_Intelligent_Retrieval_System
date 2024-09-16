@@ -2,9 +2,11 @@ import router from "@/router";
 import axios from "axios";
 import ElementUI from 'element-ui';
 // import { Store } from "vuex";
+import baseURL from '@/globle/globleApi'
 
 const aaxios = axios.create({
-    baseURL: "http://127.0.0.1:8000",
+    // baseURL: "http://127.0.0.1:8000",
+    baseURL: baseURL,
     timeout: 60000
 })
 

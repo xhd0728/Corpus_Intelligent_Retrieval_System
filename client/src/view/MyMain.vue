@@ -36,7 +36,7 @@
                     </div>
                     <div class="ch_innerblock">
                         <div class="ch_innerimg">
-                            <img src="@/assets/images/1.jpg" alt="">
+                            <img src="@/assets/images/index_kcjs.jpg" alt="">
                         </div>
                         <div class="ch_innerul">
                             <ul>
@@ -44,9 +44,9 @@
                                 <li v-for="(pp, index) in text[0]" :key="index" style="">
                                     <div style="position:relative;height: 2rem;">
                                         <span class="ch_short_text_span" @click="detail(pp.aid, 0)">{{ pp.title
-                                        }}</span>
+                                            }}</span>
                                         <span style="position:absolute;top:0;right:0;color: #bcbcc1;">{{ pp.create_time
-                                        }}</span>
+                                            }}</span>
                                     </div>
 
                                 </li>
@@ -62,7 +62,7 @@
                     </div>
                     <div class="ch_innerblock">
                         <div class="ch_innerimg">
-                            <img src="@/assets/images/2.jpg" alt="">
+                            <img src="@/assets/images/index_xsjl.jpg" alt="">
                         </div>
                         <div class="ch_innerul">
                             <ul>
@@ -70,9 +70,9 @@
                                 <li v-for="(pp, index) in text[1]" :key="index" style="">
                                     <div style="position:relative;height: 2rem;">
                                         <span class="ch_short_text_span" @click="detail(pp.aid, 1)">{{ pp.title
-                                        }}</span>
+                                            }}</span>
                                         <span style="position:absolute;top:0;right:0;color: #bcbcc1;">{{ pp.create_time
-                                        }}</span>
+                                            }}</span>
                                     </div>
 
                                 </li>
@@ -89,7 +89,7 @@
                     </div>
                     <div class="ch_innerblock">
                         <div class="ch_innerimg">
-                            <img src="@/assets/images/3.jpg" alt="">
+                            <img src="@/assets/images/index_tdfc.jpg" alt="">
                         </div>
                         <div class="ch_innerul">
                             <ul>
@@ -97,9 +97,9 @@
                                 <li v-for="(pp, index) in text[2]" :key="index" style="">
                                     <div style="position:relative;height: 2rem;">
                                         <span class="ch_short_text_span" @click="detail(pp.aid, 2)">{{ pp.title
-                                        }}</span>
+                                            }}</span>
                                         <span style="position:absolute;top:0;right:0;color: #bcbcc1;">{{ pp.create_time
-                                        }}</span>
+                                            }}</span>
                                     </div>
 
                                 </li>
@@ -115,7 +115,7 @@
                     </div>
                     <div class="ch_innerblock">
                         <div class="ch_innerimg">
-                            <img src="@/assets/images/4.jpg" alt="">
+                            <img src="@/assets/images/index_ylk.jpg" alt="">
                         </div>
                         <div class="ch_innerul">
                             <ul>
@@ -123,9 +123,9 @@
                                 <li v-for="(pp, index) in text[3]" :key="index" style="">
                                     <div style="position:relative;height: 2rem;">
                                         <span class="ch_short_text_span" @click="detail(pp.aid, 3)">{{ pp.title
-                                        }}</span>
+                                            }}</span>
                                         <span style="position:absolute;top:0;right:0;color: #bcbcc1;">{{ pp.create_time
-                                        }}</span>
+                                            }}</span>
                                     </div>
 
                                 </li>
@@ -139,61 +139,7 @@
 
         </div>
         <router-view></router-view>
-        <!-- 最近动态 -->
-        <!-- <div id="wp_w">
-            <div class="lasted_div">
-                <div class="i-title">
-                    <img src="@/assets/images/ggtz.png">
-                </div>
 
-                <div v-for="(tt, index) in text" :key="index" v-show="index == newsLi">
-                    <span class="news_title">{{ liContent[index] }}</span>
-                    <div class="latest">
-                        <ul>
-                            
-                            <li class="short_text" v-for="(pp, index) in tt" :key="index">
-                                <div class="short_text">
-                                    <span class="short_text_span" @click=detail(pp.aid)>{{ pp.title }}</span>
-                                </div>
-                                <span style="float:right;color: #bcbcc1;">{{ pp.create_time }}</span>
-                            </li>
-
-                        </ul>
-                    </div>
-
-                </div>
-
-                <div class="more">
-                    <div class="more_btn" @click="more()">
-                        <el-button type="primary" style="background-color:#607d8b;border: #607d8b;">查看更多</el-button>
-                    </div>
-                    
-                </div>
-            </div>
-            <ul class="wp_nav">
-                <li class="nav-item" id="i1" @mouseenter="enter(0)" @mouseleave="leave()"
-                    :class="0 === navLi ? 'active' : 'unactive'" @click="select(0)">
-                    <span class="item-name">课程建设</span>
-                    <div class="mark" v-show="navLi == 0">课程建设</div>
-                </li>
-                <li class="nav-item " id="i2" @mouseenter="enter(1)" @mouseleave="leave()"
-                    :class="1 === navLi ? 'active' : 'unactive'" @click="select(1)">
-                    <span class="item-name">学术交流</span>
-                    <div class="mark" v-show="navLi == 1">学术交流</div>
-                </li>
-                <li class="nav-item" id="i3" @mouseenter="enter(2)" @mouseleave="leave()"
-                    :class="2 === navLi ? 'active' : 'unactive'" @click="select(2)">
-                    <span class="item-name">团队风采</span>
-                    <div class="mark" v-show="navLi == 2">团队风采</div>
-                </li>
-                <li class="nav-item" id="i4" @mouseenter="enter(3)" @mouseleave="leave()"
-                    :class="3 === navLi ? 'active' : 'unactive'" @click="select(3)">
-                    <span class="item-name">语料库</span>
-                    <div class="mark" v-show="navLi == 3">语料库</div>
-                </li>
-
-            </ul>
-        </div> -->
         <my-footer></my-footer>
     </div>
 </template>
@@ -538,8 +484,6 @@ export default {
 
 .i-title img {
     margin-left: 40%;
-    /* width: 60px; */
-    /* margin: auto; */
 }
 
 /* nav中小li的样式 */
@@ -564,21 +508,7 @@ export default {
     cursor: pointer;
 }
 
-#i1 {
-    background: url(@/assets/images/kcjs.png) no-repeat center;
-}
 
-#i2 {
-    background: url(@/assets/images/xsjl.png) no-repeat center;
-}
-
-#i3 {
-    background: url(@/assets/images/tdfc.png) no-repeat center;
-}
-
-#i4 {
-    background: url(@/assets/images/ylk.png) no-repeat center;
-}
 
 .mark {
     position: absolute;
@@ -591,14 +521,12 @@ export default {
     opacity: 0.8;
     font-size: large;
     cursor: pointer;
-    /* color: black; */
 }
 
 .news_title {
     display: inline-block;
     margin-left: 50px;
     font-size: x-large;
-    /* color: #013064; */
     color: #607d8b;
 }
 
@@ -606,7 +534,6 @@ export default {
     margin-top: 2rem;
     width: 100%;
     height: 30rem;
-    /* background-color: skyblue; */
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -663,14 +590,6 @@ ul {
     height: 100%;
 }
 
-/* .ch_short_text {
-    display: block;
-    position: relative;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 21rem !important;
-} */
 
 .ch_short_text_span {
     cursor: pointer;
